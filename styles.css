@@ -2,6 +2,52 @@
 	box-sizing: border-box;
 }
 
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100px 10em 25% 200px;
+	row-gap: 1em;
+}
+
+header {
+	background-color: navy;
+	color: white;
+}
+
+.menu {
+	background-color: red;
+	color: white;
+}
+
+.menu ul li {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.hero {
+	background-color: skyblue;
+}
+
+main {
+	background-color: darkblue;
+}
+
+.banner {
+	background-color: yellow;
+}
+
+.extra-content {
+	background-color: palevioletred;
+}
+
+.img-container {
+	background-color: green;
+}
+
+img {
+	object-fit: cover;
+}
+
 @media (max-width: 1200.5px) {
 }
 
