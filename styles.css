@@ -62,6 +62,37 @@ img {
 }
 
 @media (max-width: 768.5px) {
+	.grid-container {
+		display: grid;
+		grid-template-areas:
+			"head head"
+			"hero hero"
+			"menu main"
+			"menu banner"
+			"menu extra";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(5, auto);
+	}
+
+	.menu {
+		grid-area: menu;
+	}
+	header {
+		grid-area: head;
+	}
+
+	.hero {
+		grid-area: hero;
+	}
+	main {
+		grid-area: main;
+	}
+	.banner {
+		grid-area: banner;
+	}
+	.extra {
+		grid-area: extra;
+	}
 }
 
 @media (max-width: 480.5px) {
