@@ -1,5 +1,11 @@
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 10px;
 }
 
 .grid-container {
@@ -26,10 +32,13 @@ header {
 
 .hero {
 	background-color: skyblue;
+	width: 100%;
+	height: max-content;
 }
 
 main {
 	background-color: darkblue;
+	color: white;
 }
 
 .banner {
@@ -45,7 +54,8 @@ main {
 }
 
 img {
-	object-fit: cover;
+	width: 100%;
+	height: auto;
 }
 
 @media (max-width: 1200.5px) {
@@ -58,6 +68,6 @@ img {
 	.grid-container {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-auto-rows: auto;
+		grid-template-rows: repeat(5, auto);
 	}
 }
